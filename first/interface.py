@@ -12,6 +12,18 @@ class Interface:
         self.text_distancia = Label(window, text='0')
         self.text_distancia.pack()
 
+        label_from = Label(window, text='De: ')
+        label_from.pack()
+
+        self.input_from = ttk.Entry(window)
+        self.input_from.pack()
+
+        label_for = Label(window, text='Para: ')
+        label_for.pack()
+
+        self.input_for = ttk.Entry(window)
+        self.input_for.pack()
+
         botao_calc_dist = ttk.Button(
             window, 
             text='Calcular Distância',
