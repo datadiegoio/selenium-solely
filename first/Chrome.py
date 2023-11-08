@@ -5,5 +5,5 @@ class Chrome:
     def driver(self):
         options = webdriver.ChromeOptions()
         options.add_argument('--incognito')
-        options.add_argument('--headless')
+        # options.add_argument('--headless')
         return webdriver.Chrome(options)
